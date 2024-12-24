@@ -180,11 +180,7 @@ class FileService
             return "$this->name.$extension";
         }
 
-        $originalName = preg_replace(
-            '/[^\w\-]/',
-            '',
-            $this->getOriginalName($file)
-        );
+        $originalName = $this->getOriginalName($file);
 
         return "{$originalName}_".Str::uuid()->toString().".$extension";
     }
