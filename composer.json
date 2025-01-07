@@ -1,6 +1,6 @@
 {
-    "name": "linctech/messenger",
-    "description": "Laravel messenger suite, forked and customized by Linctech.",
+    "name": "rtippin/messenger",
+    "description": "Laravel messenger suite.",
     "license": "MIT",
     "authors": [
         {
@@ -9,11 +9,10 @@
             "homepage": "https://tippindev.com"
         }
     ],
-    "homepage": "https://github.com/linctech001/messenger",
+    "homepage": "https://github.com/rtippin/messenger",
     "keywords": [
         "Laravel",
-        "Messenger",
-        "Linctech"
+        "Messenger"
     ],
     "require": {
         "php": "^8.1|^8.2|^8.3",
@@ -32,22 +31,22 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Linctech\\Messenger\\": "src/",
-            "Linctech\\Messenger\\Database\\Factories\\": "database/factories/"
+            "RTippin\\Messenger\\": "src/",
+            "RTippin\\Messenger\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Linctech\\Messenger\\Tests\\": "tests"
+            "RTippin\\Messenger\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Linctech\\Messenger\\MessengerServiceProvider"
+                "RTippin\\Messenger\\MessengerServiceProvider"
             ],
             "aliases": {
-                "Messenger": "Linctech\\Messenger\\Facades\\Messenger"
+                "Messenger": "RTippin\\Messenger\\Facades\\Messenger"
             }
         }
     },
